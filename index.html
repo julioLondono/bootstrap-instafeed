@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Insta-Feed</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">
+        <img id="instalogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/200px-Instagram_logo.svg.png"></img>
+      </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+                  <!-- Trigger the modal with a button -->
+        <button id="newPostBtn" type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Create new post</button>
+        
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="form-group">
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+              <div class="modal-body">
+                <p><a class="glyphicon glyphicon-camera" href="#"></a>
+                <a class="glyphicon glyphicon-map-marker" href="#"></a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <span class="glyphicon glyphicon-cog"></span>  
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a data-toggle="pill" href="#home">Stack</a></li>
+          <li><a data-toggle="pill" href="#menu1">Gallery</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home"><span class="glyphicon glyphicon-film"></span></a></li>
+    <li><a data-toggle="pill" href="#menu1"><span class="glyphicon glyphicon-th"></span></a></li>
+  </ul>
+   <!-- stack photos content -->
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <div class="wrapper">
+    <div>
+      
+    </div>  
+    <div class="flexbox">
+      <div class="feed title">
+        <h2>My First Photo</h2>
+      </div>
+      <div class="feed date">
+        <h3>12/14</h3>
+      </div>
+      <div class="feed photo">
+        <img src="http://lorempixel.com/400/200"></img>
+      </div>
+      <div class="feed comment">
+        <p>This is my first photo of the feed, this is a multyline for testing purposes. I am learning to code with <strong>#BreathCode</strong></p>
+      </div>
+    </div>
+<br></br>
+    <div class="flexbox">
+      <div class="feed title">
+        <h2>Another Picture</h2>
+      </div>
+      <div class="feed date">
+        <h3>12/15</h3>
+      </div>
+      <div class="feed photo">
+        <img src="http://lorempixel.com/g/400/200"></img>
+      </div>
+      <div class="feed comment">
+        <p>This is another random picture, the video moves too fast to capture the text. I am learning to code with <strong>#BreathCode</strong></p>
+      </div>
+    </div>
+    <br></br>
+    <div class="flexbox">
+      <div class="feed title">
+        <h2>Third Photo</h2>
+      </div>
+      <div class="feed date">
+        <h3>12/16</h3>
+      </div>
+      <div class="feed photo">
+        <img src="http://lorempixel.com/400/200/sports"></img>
+      </div>
+      <div class="feed comment">
+        <p>Hopefully this will be different than the others. I am learning to code with <strong>#BreathCode</strong></p>
+      </div>
+    </div>
+    <br></br>
+    <div class="flexbox">
+      <div class="feed title">
+        <h2>Last Photo</h2>
+      </div>
+      <div class="feed date">
+        <h3>12/17</h3>
+      </div>
+      <div class="feed photo">
+        <img src="http://lorempixel.com/400/200/sports/1"></img>
+      </div>
+      <div class="feed comment">
+        <p>This concludes this homework, it was fun. I am learning to code with <strong>#BreathCode</strong></p>
+      </div>
+    </div>
+  </div>
+    </div>
+    <!-- grid photos content -->
+    <div id="menu1" class="tab-pane fade">
+      <div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-4">
+      
+      <img src="http://lorempixel.com/400/200" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      
+      <img src="http://lorempixel.com/g/400/200" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      
+      <img src="http://lorempixel.com/400/200/sports" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-4">
+      
+      <img src="http://lorempixel.com/400/200/sports/1" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      
+      <img src="http://lorempixel.com/400/200" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      
+      <img src="http://lorempixel.com/g/400/200" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    
+  </div>
+</div><br><br>
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+</body>
+</html>
