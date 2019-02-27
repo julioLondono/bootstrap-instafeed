@@ -1,28 +1,31 @@
  .navbar {
     margin-bottom: 0;
     border-radius: 0;
+    background: rgb(240, 240, 240);
+  	border-color: white;
  }
     
  .img {
     width: 100%;
     height: auto;
  }
+ .caret {
+ 	/*background-color:rgb(240, 240, 240);*/
+ }
  .glyphicon  {
  	font-size: 25px;
   }
+  
  .fab {
   	font-size: 25px;
   }
  body {
  	background: rgb(240, 240, 240);
   }
- .navbar {
-  	background: rgb(240, 240, 240);
-  	border-color: white;
- }
+ 
  #instalogo {
- 	width: 80%;
-    height: auto;
+ 	height: auto;
+ 	margin-left: 100px;
  }
  .navbar-brand {
   	padding: 0px;
@@ -60,45 +63,38 @@ h3{
 p{
 	padding-left: 10px;
 }
-.wraper{
 
-}
-
-.flexbox {
-	display: grid;
-	grid-template-columns: [col] 200px [col] 200px;
-	grid-template-rows: [row] 70px [row] auto [row] auto;
-	justify-content: center;
-}
-
-.feed {
-	background-color: white;
-
-}
-
-.title {
-		grid-column: col 1 ;
-		grid-row: row;
-
-}
-
-.date {
-		grid-column: col 2 ;
-		grid-row: row;
-		
-
-}
-
-.photo {
-		grid-column: col 1 / span 2;
-		grid-row: row 2;
-}
-
-.comment {
-		grid-column: col 1 / span 2 ;
-		grid-row: row 3;
-}
 .nav-pills {
 	margin: auto;
 	width: 150px;
+}
+.fondocard {
+	background-color: white;
+	width: 400px;
+	margin: auto;
+}
+.cardheader {
+	display: flex;
+}
+.h4left {
+	text-align: left;
+	width: 50%;
+	padding-left: 10px;
+}
+.h4right {
+	text-align: right;
+	width: 50%;
+	padding-right: 10px;
+}
+.navbar .nav > li.dropdown.active > a
+{
+   color: #fff;
+   background-color:rgb(240, 240, 240);
+   border-color: #fff;
+}
+.navbar .nav > li.dropdown.open > a
+{
+   color: #fff;
+   background-color:rgb(235, 235, 235);
+   border-color: #fff;
 }
